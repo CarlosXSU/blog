@@ -1,3 +1,7 @@
+create database blog;
+
+use blog;
+
 CREATE TABLE usuario (
     id int NOT NULL AUTO_INCREMENT,
     nome varchar(50) NOT NULL,
