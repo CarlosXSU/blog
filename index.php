@@ -19,7 +19,7 @@
                 <!-- MENU -->
                 <?php include 'includes/menu.php';?>  
             </div>
-            <div class="col-md-10" style="padding-top: 50px;">
+            <div class="col-md-12" style="padding-top: 50px;">
                 <!-- CONTEÚDO -->
                 <h2>Pagina Inicial</h2>  
                 <?php include 'includes/busca.php'; ?>

@@ -19,7 +19,7 @@
             <?php if ((isset($_SESSION['login']))
                     && ($_SESSION['login'] ['usuario'] ['adm'] === 1)) : ?>
             <li class="nav-item">
-                <a href="nav-link" href="usuario.php">Usuarios</a>
+                <a class="nav-link" href="usuario.php">Usuarios</a>
             </li>  
             <?php endif; ?> 
         </ul>
