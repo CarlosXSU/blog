@@ -36,7 +36,7 @@
                                 $criterio
                             );
 
-                            $entidade = $retrono[0];
+                            $entidade = $retorno[0];
                         }
                     ?>
                     <h2>Usuário</h2>
