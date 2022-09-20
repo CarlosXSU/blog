@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <?php include 'includes/topo.php'; ?>
+                    <?php include 'includes/topo.php'; ?> <!-- Chamando o topo da pasta includes -->
                 </div>
             </div>
             <div class="row" style="min-height: 500px;">

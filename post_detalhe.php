@@ -5,11 +5,11 @@
     require_once 'core/sql.php';
     require_once 'core/mysql.php';
 
-    foreach($_GET as $indice => $dado){
+    foreach($_GET as $indice => $dado){ //Limpar dados faz parte da função funções, localizada nos includes
         $$indice = limparDados($dado);
     }
 
-    $posts = buscar(
+    $posts = buscar( //função buscar do mysql.php
         'post',
         [
             'titulo',
@@ -44,7 +44,7 @@
 
                 </div>
             </div>
-            <div class="row" style="min-height: 500px;">
+            <div class="row" style="min-height: 500px;"> <!-- min-height define a altura mínima de um elemento. -->
                 <div class="col-md-12">
                     <?php include 'includes/menu.php';?>
                 </div>
@@ -52,10 +52,10 @@
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $post['titulo']?></h5>
                         <h5 class="card-subtitle mb-2 text-muted">
-                            <?php echo $data_post?> Por <?php echo $post['nome']?>
+                            <?php echo $data_post?> Por <?php echo $post['nome']?> <!-- Design bonitinho do post -->
                         </h5>
                         <div class="card_text">
-                            <?php echo html_entity_decode($post['texto']) ?>
+                            <?php echo html_entity_decode($post['texto']) ?> <!-- É o oposto de htmlentities() , pois converte entidades HTML emstringseus caracteres correspondentes. -->
                         </div>
                     </div>
                 </div>

@@ -40,13 +40,13 @@
                         $criterio = [];
 
                         if(!empty($busca)) {
-                            $criterio [] = ['nome', 'like', "%{busca}%"];
+                            $criterio [] = ['nome', 'like', "%{$busca}%"]; //busca de usuários, dá para mudar o que será buscado alterando o primeiro campo
                         }
 
-                        $result = buscar(
-                            'usuario',
+                        $result = buscar( //função buscar do mysql.php
+                            'usuario', //entidade
                             [
-                                'id',
+                                'id', //campos
                                 'nome',
                                 'email',
                                 'data_criacao',
@@ -59,7 +59,7 @@
 
                     ?>
                     <table class="table table-bordered table-hover table-striped 
-                                    table-responsive{-sm|-md|-lg|-xl}">
+                                    table-responsive{-sm|-md|-lg|-xl}"> <!-- Design foda da listagem de usuário -->
                         <thead>
                             <tr>
                                 <td>Nome</td>
